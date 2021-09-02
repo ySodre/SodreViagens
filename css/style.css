@@ -1,0 +1,358 @@
+/* Importa fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background-color: #D7D7D7;
+    font-family: 'Montserrat', sans-serif;
+    color: #2F2F2F;
+}
+
+/* Header Start */
+
+header {
+    /* Tudo o que o usuario esta vendo  */
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url("../imagens/fuji.png.jpg");
+}
+
+header nav {
+    /* Deixa tudo na mesma linha */
+    display: flex;
+    /* Deixa um espaço entre os elementos */
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+
+/* Modifica a classe p dentro da nav */
+
+nav p {
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    /* 0 de margin em cima e embaixa e 15 de margem na esquerda e direita */
+    margin: 0 15px;
+}
+
+.header-content {
+    color: #D7D7D7;
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+/* Header End */
+
+/* Pacotes start */
+
+.pacotes {
+    background-color: #5D5D5D;
+}
+
+.pacotes .pacotes-card {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    max-width: 950px;
+    flex-wrap: wrap;
+}
+
+.pacotes .card {
+    width: 250px;
+    height: 350px;
+    background: #2F2F2F;
+    color: #D7D7D7;
+    border-radius: 24px 0px;
+    margin: 25px;
+    position: relative;
+}
+
+.pacotes .card .card-tag-top {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #A57501;
+    color: #D7D7D7;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag-top p {
+    margin: 0px;
+    font-size: 0.8 rem;
+    font-weight: bold;
+}
+
+.pacotes .card .card-tag-bottom {
+    position: absolute;
+    background: #A57501;
+    color: #D7D7D7;
+    border-radius: 0 8px 8px 0;
+    padding: 0px 10px;
+    left: 0px;
+    top: 140px;
+}
+
+.pacotes .card .card-tag {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #D7D7D7;
+    font-weight: bold;
+}
+
+.pacotes .card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
+}
+
+.pacotes .card-content {
+    padding: 0 15px;
+}
+
+.pacotes .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.pacotes .card-content ul li {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.pacotes .card-content li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.pacotes .card-content h1 {
+    font-size: 1rem;
+}
+
+.pacotes .pacotes-title {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    color: #D7D7D7;
+}
+
+/* Pacotes END */
+
+/* Serviços Start */
+
+.servicos{
+    padding: 15px;
+}
+
+.servicos .servicos-title {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.servicos .servicos-cards{
+    margin-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.servicos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.servicos .card svg {
+    width: 60px;
+    height: 60px;
+    margin: 50px 0;
+    transition: all 1s;
+}
+
+.servicos .card svg:hover {
+    stroke: #2F2F2F;
+    transform: scale(1.1);
+}
+
+.servicos .card h3{
+    font-weight: bold;
+}
+
+.servicos .card p {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.servicos .card .card-content {
+    height: 180px;
+    text-align: center;
+}
+
+.servicos button {
+    background-color: #2F2F2F;
+    color:  #D7D7D7;
+}
+
+/* Serviços End */
+
+/* Contato Start */
+
+.contato{
+    padding: 60px;
+    background: #D7D7D7;
+    position: relative;
+}
+
+.contato .contato-card {
+    width: 350px;
+    height: 300px;
+    background: #D7D7D7;
+    position: absolute;
+    z-index: 99;
+    border-radius: 8px;
+
+    top: calc(50% - 150px);
+    left:calc(20% - 175px);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.contato .contato-card h1 {
+    padding-left: 50px;
+    text-align: left;
+}
+
+.contato .contato-card li {
+    font-size: .8rem;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+.contato .contato-card li svg {
+    width: 16px;
+    margin: 10px;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+/* Contato end */
+
+/* Especial para mapa */
+@media (max-width: 950px) {
+    .contato{
+        padding: 60px 0;
+    }
+
+    .contato .contato-card{
+        left: 40px;
+    }
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 767px) {}
+
+@media (max-width: 800px) {
+    .contato {
+        padding: 60px 0;
+    }
+
+    .contato .contato-card {
+        position: static;
+        margin: 40px auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        margin-bottom: 55px;
+    }
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        z-index: 99;
+        color: #D7D7D7;
+        background: #2F2F2F;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contato{
+        padding: 60px 0;
+    }
+
+    .contato .contato-card {
+        position: static;
+        margin: 40px auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {}
+
+@media (min-width: 1200px) {}
